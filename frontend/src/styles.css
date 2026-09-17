@@ -23,6 +23,29 @@ h1 {
   margin-top: 0;
 }
 
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 1.5rem;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #333;
+}
+
+.controls select {
+  font-size: 1rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid #c9c9d6;
+  border-radius: 8px;
+  background: white;
+}
+
 .randomize {
   font-size: 1rem;
   padding: 0.6rem 1.2rem;
@@ -31,7 +54,6 @@ h1 {
   background: #4f46e5;
   color: white;
   cursor: pointer;
-  margin: 1rem 0 1.5rem;
 }
 
 .randomize:disabled {
@@ -73,6 +95,39 @@ h1 {
 
 .error {
   color: #b3261e;
+}
+
+.nav-link {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #4f46e5;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+.survey-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.survey-form select,
+.survey-form textarea {
+  font: inherit;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #c9c9d6;
+  border-radius: 8px;
 }
 
 @media (max-width: 640px) {
